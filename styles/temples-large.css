@@ -1,0 +1,17 @@
+
+#hamburgerButton {
+    display: none;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
