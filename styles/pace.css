@@ -1,0 +1,109 @@
+ /* Inline CSS for demonstration; move this to your CSS file */
+ :root {
+  --primary-color: #169b62; /* Irish green */
+  --secondary-color: #ffffff;
+  --accent-color: #ff8200; /* Irish flag orange */
+  --font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Make banner cover the full viewport height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill container */
+  display: block;
+}
+
+.data-card, .weather-card {
+  position: absolute;
+  background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green background */
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data-card {
+  top: 20%; /* Position vertically */
+  left: 10%; /* Position horizontally */
+  width: 250px; /* Adjust size */
+}
+
+.weather-card {
+  bottom: 20%; /* Position vertically */
+  right: 10%; /* Position horizontally */
+  width: 250px; /* Adjust size */
+}
+footer {
+  background-color: #004c00;
+  color: #fff;
+  padding: 1rem;
+  font-size: medium;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer #lastModified {
+  font-size: small;
+  color: #8f8f8f;
+}
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  /* Banner adjustments */
+  .banner {
+    height: 50vh; /* Reduce banner height for smaller screens */
+  }
+  .banner img {
+    object-fit: cover; /* Maintain the image ratio and fill smaller heights */
+  }
+
+  /* Data and Weather Cards */
+  .data-card, .weather-card {
+    position: static; /* Remove absolute positioning for a flow layout */
+    margin: 1rem auto; /* Center cards with margins */
+    width: 90%; /* Use most of the screen width */
+    text-align: center; /* Center-align text */
+    padding: 1rem; /* Add padding for readability */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow intensity */
+  }
+
+  /* Header adjustments */
+  header {
+    font-size: 1.2rem; /* Reduce font size for small screens */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  /* Footer adjustments */
+  footer {
+    font-size: 0.8rem; /* Smaller text in the footer */
+    padding: 0.8rem; /* Adjust padding */
+  }
+
+  footer p {
+    margin: 0.3rem 0; /* Reduce spacing between lines */
+  }
+}
+
