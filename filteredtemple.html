@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>    
+    <link rel="stylesheet" href="styles/filteredtemple.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <script defer src="scripts/filteredtemple.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="hamburgerButton" aria-label="Toggle Navigation">☰</button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#" id="filterHome">Home</a></li>
+                <li><a href="#" id="filterOld">Old</a></li>
+                <li><a href="#" id="filterNew">New</a></li>
+                <li><a href="#" id="filterLarge">Large</a></li>
+                <li><a href="#" id="filterSmall">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="gallery">
+            <!-- Dynamic content will be added here by JavaScript -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Temple Album | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
