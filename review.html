@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+</head>
+<body>
+  <main>
+    <h1>Thank You for Your Review!</h1>
+    <p>We appreciate your feedback.</p>
+    <p>You have submitted <span id="review-count"></span> reviews so far.</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Product Review</p>
+  </footer>
+  <script>
+    // Increment review count in localStorage
+    let reviewCount = localStorage.getItem('reviewCount') || 0;
+    reviewCount++;
+    localStorage.setItem('reviewCount', reviewCount);
+
+    // Display review count
+    document.getElementById('review-count').textContent = reviewCount;
+  </script>
+</body>
+</html>
