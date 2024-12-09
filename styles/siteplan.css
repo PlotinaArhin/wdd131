@@ -1,0 +1,46 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #FFFFFF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1E90FF;
+    color: black;
+    padding: 20px;
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 20px;
+    margin: 40px;
+    border: 10px solid black;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    
+    border: 10px solid #000;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
