@@ -277,4 +277,12 @@ footer {
     .menu-container{
         display: none;
     }
+    footer {
+      font-size: 0.8rem; /* Smaller text in the footer */
+      padding: 0.8rem; /* Adjust padding */
+    }
+  
+    footer p {
+      margin: 0.3rem 0; /* Reduce spacing between lines */
+    }
 }
