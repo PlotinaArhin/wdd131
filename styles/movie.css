@@ -273,86 +273,9 @@
     padding: 1rem;
     text-align: center;
 }
-  
-@media (max-width: 768px) {
-  /* Navbar adjustments */
-  .navbar {
-      height: auto;
-      padding: 10px;
-  }
-
-  .navbar-container {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .menu-list {
-      flex-direction: column;
-      margin: 10px 0;
-  }
-
-  .menu-list-item {
-      margin: 10px 0;
-  }
-
-  .profile-container {
-      justify-content: center;
-      margin-top: 10px;
-  }
-
-  /* Sidebar adjustments */
-  .sidebar {
-      width: 100%;
-      height: auto;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 10px 0;
-      position: fixed;
-      bottom: 0;
-      top: auto;
-  }
-
-  .left-menu-icon {
-      font-size: 24px;
-  }
-
-  /* Content adjustments */
-  .content-container {
-      margin-left: 0;
-      padding: 10px;
-  }
-
-  .featured-content {
-      padding: 20px;
-      height: auto;
-  }
-
-  .featured-title {
-      width: 100%;
-      font-size: 24px;
-  }
-
-  .featured-desc {
-      width: 100%;
-      margin: 20px 0;
-  }
-
-  .movie-list-wrapper {
-      overflow-x: scroll;
-  }
-
-  .movie-list-item {
-      margin-right: 10px;
-  }
-
-  .movie-list-item-img {
-      width: 200px;
-      height: 150px;
-  }
-
-  /* Footer adjustments */
-  footer {
-      font-size: 14px;
-      padding: 0.5rem;
+ 
+@media only screen and (max-width: 940px){
+  .menu-container{
+      display: none;
   }
 }
